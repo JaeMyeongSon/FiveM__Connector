@@ -1,5 +1,5 @@
 # FiveM__Connector
-FiveM Osan Server Client Connector
+☄️FiveM Osan Server Client Connector☄️
 
 2019-2020 
 FiveM 게임 플랫폼에서 누적 1만명 가까운 유저들과 함께 전세계 서버 1위였던 Osan 서버의 클라이언트 접속 런처입니다.
