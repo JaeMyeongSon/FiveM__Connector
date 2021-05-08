@@ -35,7 +35,7 @@ implementation
 
 {$R *.dfm}
 
-function processExists(exeFileName: string): Boolean;
+function processExists(exeFileName: string): Boolean; //í”„ë¡œì„¸ìŠ¤ 
 var
   ContinueLoop: BOOL;
   FSnapshotHandle: THandle;
@@ -68,29 +68,27 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
-//WebBrowser1.OleObject.Document.Body.Scroll:='no';
    Borderstyle := bsNone;
 WebBrowser1.Silent :=True;
-//SetWindowPos(Form1.handle, HWND_TOPMOST, Form1.Left, Form1.Top, Form1.Width, Form1.Height,0);
-WebBrowser2.Navigate('https://www.jango.com/stations/361346219/tunein');
+WebBrowser2.Navigate('https://www.jango.com/stations/361346219/tunein'); // ìŒì•… 
 end;
 
 
 procedure TForm1.Label1Click(Sender: TObject);
 begin
-WebBrowser1.Navigate('fivem://connect/13.125.110.124:30120');
-Label1.Caption := 'FiveM ½ÇÇàÁß..' ;
+WebBrowser1.Navigate('fivem://connect/13.125.110.124:30120'); //ì ‘ì†
+Label1.Caption := 'FiveM ì‹¤í–‰ì¤‘..' ; 
  Timer1.Enabled := true;
  WebBrowser2.OleObject.Document.Body.Scroll:='no';
-//ShowMessage ('¿À´Ãµµ ¿À»ê¼­¹ö¸¦ ÇÃ·¹ÀÌ ÇØÁÖ¼Å¼­ °¨»çÇÕ´Ï´Ù')
+//ShowMessage ('ì˜¤ëŠ˜ë„ ì˜¤ì‚°ì„œë²„ë¥¼ í”Œë ˆì´ í•´ì£¼ì…”ì„œ ê°ì‚¬í•©ë‹ˆë‹¤')
 end;
 
 
-procedure TForm1.Timer1Timer(Sender: TObject);
+procedure TForm1.Timer1Timer(Sender: TObject); //í”„ë¡œì„¸ìŠ¤ 
  begin
   if processExists('FiveM.exe') then
        Button1.Click
-  // Label1.Caption :='¼­¹ö¿¡ Á¢¼Ó µÇ¾ú½À´Ï´Ù'+#13#10+' 10ÃÊÈÄ'+#13#10+ '·±Ã³°¡ ÀÚµ¿À¸·Î Á¾·áµË´Ï´Ù.'
+  // Label1.Caption :='ì„œë²„ì— ì ‘ì† ë˜ì—ˆìŠµë‹ˆë‹¤'+#13#10+' 10ì´ˆí›„'+#13#10+ 'ëŸ°ì²˜ê°€ ìë™ìœ¼ë¡œ ì¢…ë£Œë©ë‹ˆë‹¤.'
   else
    WebBrowser1.Navigate('fivem://connect/13.125.110.124:30120');
 
