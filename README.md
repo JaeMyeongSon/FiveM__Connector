@@ -14,7 +14,7 @@ FiveM 게임 플랫폼에서 누적 1만명 가까운 유저들과 함께 전세
 
 사과몽 : https://www.youtube.com/watch?v=uSfystnuags
 
-런처에는 접속 기능이외에 
+런처에는 접속 기능이외에 www.jango.com 사이트를 이용한 음악 재생기능도 함께 코드에 작성되어있습니다.
 
 
 런처 구동 이미지 : 
